@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="notifications">
+      <div class="header">
+        <div>
+          <h2 class="heading">Notifications</h2>
+          <span class="quantity"></span>
+        </div>
+        <p class="header-btn" onclick="handleMark()">Mark all as read</p>
+      </div>
+      <div class="content">
+        <ul class="list-item">
+          <li class="item active">
+            <div class="flex">
+              <img
+                class="item-img"
+                src="./assets/images/avatar-mark-webber.webp"
+                alt=""
+              />
+              <div class="item-noti">
+                <div class="item-noti-head">
+                  <h3 class="item-noti-name">Mark Webber</h3>
+                  <p class="item-noti-action">reacted to your recent you</p>
+                  <p class="item-noti-text">My first tournament today!</p>
+                  <p class="item-noti-dot"></p>
+                </div>
+                <p class="item-noti-time">1m ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="item active">
+            <div class="flex">
+              <img
+                class="item-img"
+                src="./assets/images/avatar-angela-gray.webp"
+                alt=""
+              />
+              <div class="item-noti">
+                <div class="item-noti-head">
+                  <h3 class="item-noti-name">Angela Gray</h3>
+                  <p class="item-noti-action">followed you</p>
+                  <p class="item-noti-text"></p>
+                  <p class="item-noti-dot"></p>
+                </div>
+                <p class="item-noti-time">5m ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="item active">
+            <div class="flex">
+              <img
+                class="item-img"
+                src="./assets/images/avatar-jacob-thompson.webp"
+                alt=""
+              />
+              <div class="item-noti">
+                <div class="item-noti-head">
+                  <h3 class="item-noti-name">Jacob Thomson</h3>
+                  <p class="item-noti-action">has joined your group</p>
+                  <p class="item-noti-text">Chess group</p>
+                  <p class="item-noti-dot"></p>
+                </div>
+                <p class="item-noti-time">1 day ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="flex">
+              <img
+                class="item-img"
+                src="./assets/images/avatar-rizky-hasanuddin.webp"
+                alt=""
+              />
+              <div class="item-noti">
+                <div class="item-noti-head">
+                  <h3 class="item-noti-name">Rizky Hasanuddin</h3>
+                  <p class="item-noti-action">sent you private message</p>
+                  <p class="item-noti-text"></p>
+                </div>
+                <p class="item-noti-time">5 days ago</p>
+              </div>
+            </div>
+            <p class="item-message">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game
+            </p>
+          </li>
+          <li class="item">
+            <div class="flex">
+              <img
+                class="item-img"
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt=""
+              />
+              <div class="item-noti">
+                <div class="item-noti-head">
+                  <h3 class="item-noti-name">Kimberly Smith</h3>
+                  <p class="item-noti-action">comment on your picture</p>
+                </div>
+                <p class="item-noti-time">1 weeks ago</p>
+              </div>
+              <img
+                class="item-img-sub"
+                src="/notifications-page-main/assets/images/image-chess.webp"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="item">
+            <div class="flex">
+              <img
+                class="item-img"
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt=""
+              />
+              <div class="item-noti">
+                <div class="item-noti-head">
+                  <h3 class="item-noti-name">Nathan Peterson</h3>
+                  <p class="item-noti-action">reacted to your recent post</p>
+                  <p class="item-noti-text">
+                    5 end-game strategies to increase your win rate
+                  </p>
+                </div>
+                <p class="item-noti-time">2 weeks ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="flex">
+              <img
+                class="item-img"
+                src="./assets/images/avatar-anna-kim.webp"
+                alt=""
+              />
+              <div class="item-noti">
+                <div class="item-noti-head">
+                  <h3 class="item-noti-name">Anna Kim</h3>
+                  <p class="item-noti-action">left the group</p>
+                  <p class="item-noti-text">Chess Club</p>
+                </div>
+                <p class="item-noti-time">2 weeks ago</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
